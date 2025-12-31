@@ -1,0 +1,299 @@
+body {
+    background-color: #F6EADB !important;
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif !important;
+    margin: 0;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif !important;
+}
+.payment-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.payment-box {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(109, 125, 99, 0.15);
+    overflow: hidden;
+    animation: slideUp 0.6s ease-out;
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.payment-header {
+    background-color: #6D7D63 !important;
+    color: #EADAC0 !important;
+    padding: 2rem;
+    text-align: center;
+}
+.payment-header h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.75rem;
+    font-family: 'Raleway', sans-serif !important;
+}
+.payment-header i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: #EADAC0;
+}
+.payment-body {
+    padding: 2rem;
+    background: white;
+}
+.brand-title {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 1.1rem;
+    color: #6D7D63;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+.info-card {
+    background: #F6EADB;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #6D7D63;
+}
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 8px 0;
+}
+.summary-row:not(:last-child) {
+    border-bottom: 1px solid #d4c5a9;
+}
+.summary-row strong {
+    color: #6D7D63;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif !important;
+}
+.summary-row span {
+    color: #5a6b51;
+    font-weight: 500;
+}
+.amount-highlight {
+    background: #6D7D63;
+    color: #EADAC0 !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.pay-button {
+    background-color: #6D7D63 !important;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    color: #EADAC0 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    font-family: 'Raleway', sans-serif !important;
+}
+.pay-button:hover {
+    background-color: #5a6b51 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(109, 125, 99, 0.3);
+}
+.cancel-button {
+    background-color: transparent !important;
+    border: 2px solid #6D7D63 !important;
+    padding: 12px 30px;
+    border-radius: 8px;
+    color: #6D7D63 !important;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: 'Raleway', sans-serif !important;
+    text-decoration: none;
+    display: inline-block;
+}
+.cancel-button:hover {
+    background-color: #6D7D63 !important;
+    color: #EADAC0 !important;
+    transform: translateY(-2px);
+}
+.security-badge {
+    text-align: center;
+    margin-top: 1rem;
+    color: #6D7D63;
+    font-size: 0.9rem;
+}
+.security-badge i {
+    color: #6D7D63;
+    margin-right: 5px;
+}
+.warning-box {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.warning-box i {
+    color: #856404;
+    margin-right: 8px;
+}
+.warning-text {
+    color: #856404;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+/* Mobile First Responsive Design */
+@media (max-width: 576px) {
+    .payment-container {
+    padding: 10px;
+    min-height: 100vh;
+    }
+    .payment-box {
+    margin: 0;
+    max-width: 100%;
+    border-radius: 10px;
+    }
+    .payment-header {
+    padding: 1.5rem 1rem;
+    }
+    .payment-header h3 {
+    font-size: 1.4rem;
+    }
+    .payment-header i {
+    font-size: 2rem;
+    }
+    .payment-body {
+    padding: 1.5rem 1rem;
+    }
+    .brand-title {
+    font-size: 1rem;
+    }
+    .info-card {
+    padding: 1rem;
+    }
+    .summary-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    }
+    .summary-row strong {
+    font-size: 0.9rem;
+    }
+    .summary-row span {
+    font-size: 0.9rem;
+    }
+    .amount-highlight {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    }
+    .pay-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    }
+    .cancel-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    }
+    .warning-text {
+    font-size: 0.8rem;
+    }
+    .security-badge {
+    font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .payment-container {
+    padding: 15px;
+    }
+    .payment-box {
+    margin: 10px;
+    max-width: 100%;
+    }
+    .payment-header {
+    padding: 1.8rem;
+    }
+    .payment-body {
+    padding: 1.8rem;
+    }
+    .summary-row {
+    flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .payment-box {
+    max-width: 550px;
+    }
+}
+
+@media (min-width: 993px) {
+    .payment-box {
+    max-width: 500px;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .payment-container {
+    padding: 10px;
+    }
+    .payment-header {
+    padding: 1rem;
+    }
+    .payment-header i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    }
+    .payment-header h3 {
+    font-size: 1.3rem;
+    }
+    .payment-body {
+    padding: 1rem;
+    }
+}
+
+/* Processing Animation */
+.processing-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(246, 234, 219, 0.95);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.processing-content {
+    text-align: center;
+    color: #6D7D63;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid #e0d4c0;
+    border-top: 4px solid #6D7D63;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
